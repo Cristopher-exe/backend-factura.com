@@ -1,0 +1,65 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Logs
+logs
+*.log
+logs/*
+
+# Dependencias
+node_modules/
+jspm_packages/
+
+# Entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Binaries
+*.exe
+*.dll
+*.so
+
+# Coverage
+coverage/
+
+# Sistemas operativos
+.DS_Store    # macOS
+Thumbs.db    # Windows
+ehthumbs.db  # Windows
+
+# Archivos de desarrollo
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Cachés y otros archivos
+.cache/
+*.swp
+*.tmp
+*.bak
+
+# Archivos de build
+dist/
+build/
+
+# Archivos relacionados con pruebas
+/coverage/
+.nyc_output/
+
+# Paquetes de lock
+package-lock.json
+yarn.lock
+
+# Otros
+*.iml
