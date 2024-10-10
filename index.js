@@ -5,11 +5,9 @@ import axios from "axios";
 import bodyParser from "body-parser";
 import cors from "cors";
 
-//Inicializa Express
 const app = express();
 dotenv.config();
 
-// Middleware para parsear el body de las peticiones POST
 app.use(bodyParser.json());
 app.use(cors());
 const port = 3000;
@@ -41,8 +39,7 @@ app.all("/api/*", async (req, res) => {
         }
         break;
       case "POST":
-        const postData = req.body;
-        console.log(`BACK: ${postData}`);
+        const postData = JSON.stringify(req.body);
         response = await axios.post(fullPath, postData, { headers: HEADERS });
         break;
     }
